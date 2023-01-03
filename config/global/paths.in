@@ -62,7 +62,7 @@ config BUILD_DIR
 config PREFIX_DIR
     string
     prompt "Prefix directory"
-    default "${CT_PREFIX:-${HOME}/x-tools}/${CT_HOST:+HOST-${CT_HOST}/}${CT_TARGET}"
+    default "${CT_PREFIX:-${PWD}/x-tools}/${CT_HOST:+HOST-${CT_HOST}/}${CT_TARGET}"
     help
       This is the path the toolchain will run from.
 
